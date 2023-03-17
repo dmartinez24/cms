@@ -1,24 +1,31 @@
 <!--
-    templateType: page
-    isAvailableForNewContent: true
+  templateType: "page"
+  isAvailableForNewContent: true
 -->
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
-    <meta name="description" content="{{ content.meta_description }}">
-    {% if branding_favicon %}
-      <link rel="shortcut icon" href="{{ branding_favicon }}" />
-    {% endif %}
-    {{ standard_header_includes }}
-  </head>
-  <body>
-    {% dnd_area "dnd_area"
-      label="Main section"
-    %}
+{{ standard_header_includes }}
+  <section class="text-center relative px-0 py-16 pb-0 m-0 font-bold leading-6 text-left bg-white text-zinc-700 bg-opacity-[0]" style="outline: none; transition: background 0.3s ease 0s, border 0.3s ease 0s, border-radius 0.3s ease 0s, box-shadow 0.3s ease 0s;">
+             <h2 class="relative visible px-0 pt-0 pb-4 m-0 font-sans text-4xl not-italic font-normal text-center opacity-100 text-slate-800" style="line-height: 46px; outline: none; transition: all 500ms ease 0s;">
+               Symbol for Partners
+             </h2>
+             <h3
+                   class="block relative visible p-0 m-0 text-xl not-italic font-bold leading-7 text-center opacity-100 text-slate-800"
+                   style="outline: none; transition: all 500ms ease 0s;"
+             >
+               Add Symbol to Your Portfolio!
+             </h3>
 
-    {% end_dnd_area %}
-    {{ standard_footer_includes }}
-  </body>
-</html>
+             <div class="relative p-0 my-0 mx-auto w-16 h-2 mb-5 font-bold leading-6 text-center bg-no-repeat text-zinc-700"
+                  style='background-image: url("https://symbolsecurity.com/wp-content/themes/naxly/assets/images/icons/decor-1.png"); outline: none;'
+             ></div>
+
+             <div class="relative p-0 mx-0 mt-0 mb-8 text-base leading-6 text-center text-zinc-700" style="outline: none;">
+               <p class="mb-5 font-normal">Symbol Security is a partner-first SaaS company. We Built our Platform to be
+                 delivered by others and we love our partners!</p>
+                <p class="font-normal">Let us show you how we can work together!</p>
+             </div>
+
+
+
+           </section>
+      
+{{ standard_footer_includes }}

@@ -1,24 +1,24 @@
 <!--
-    templateType: page
-    isAvailableForNewContent: true
+  templateType: "page"
+  isAvailableForNewContent: true
 -->
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
-    <meta name="description" content="{{ content.meta_description }}">
-    {% if branding_favicon %}
-      <link rel="shortcut icon" href="{{ branding_favicon }}" />
-    {% endif %}
-    {{ standard_header_includes }}
-  </head>
-  <body>
-    {% dnd_area "dnd_area"
-      label="Main section"
-    %}
+{{ standard_header_includes }}
+<section class="block relative pt-32 px-0 m-0 leading-5 text-center text-zinc-700">
+             <div
+                   class="relative py-0 px-4 m-0 w-full leading-5 text-center sm:max-w-full sm:flex-shrink-0 sm:flex-grow-0 sm:basis-full md:max-w-full md:flex-shrink-0 md:flex-grow-0 md:basis-full lg:max-w-full lg:flex-shrink-0 lg:flex-grow-0 lg:basis-full text-zinc-700"
+                   style="outline: none;">
+                 <h2 class="relative visible px-0 pt-0 pb-4 m-0 font-sans text-4xl not-italic font-normal text-center opacity-100 text-slate-800"
+                     style="line-height: 46px; outline: none; transition: all 500ms ease 0s;">
+                   <strong
+                         class="p-0 m-0 text-4xl text-center text-slate-800"
+                         style="outline: none; font-weight: bolder; line-height: 46px;"
+                   >What we do</strong>
+                 </h2>
+                 <div
+                       class="relative p-0 my-0 mx-auto w-16 h-2 leading-5 text-center bg-no-repeat text-zinc-700"
+                       style='background-image: url("https://symbolsecurity.com/wp-content/themes/naxly/assets/images/icons/decor-1.png"); outline: none;'
+                 ></div>
 
-    {% end_dnd_area %}
-    {{ standard_footer_includes }}
-  </body>
-</html>
+             </div>
+           </section>
+{{ standard_footer_includes }}

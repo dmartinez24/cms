@@ -1,24 +1,58 @@
 <!--
-    templateType: page
-    isAvailableForNewContent: true
+  templateType: "page"
+  isAvailableForNewContent: true
 -->
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
-    <meta name="description" content="{{ content.meta_description }}">
-    {% if branding_favicon %}
-      <link rel="shortcut icon" href="{{ branding_favicon }}" />
-    {% endif %}
-    {{ standard_header_includes }}
-  </head>
-  <body>
-    {% dnd_area "dnd_area"
-      label="Main section"
-    %}
+{{ standard_header_includes }}
+<section class="flex py-20 pb-24">
+             <div class="flex-1 w-1/2">
+               <h1 class=" max-w-fit relative visible p-0 mx-0 mt-0 mb-6 font-sans text-6xl not-italic font-bold text-left opacity-100 text-slate-800">
+                 {% module "module_16789968330811" path="@hubspot/text", label="main heading" no_wrapper="true" %}
+              
+               </h1>
+               <p class="relative visible p-0 mx-0 mt-0 mb-10 text-lg not-italic font-medium leading-7 text-left opacity-100 text-stone-500">
+                 {% module "module_16789968330812" path="@hubspot/text", label="main paragraph" no_wrapper="true" %}
+               </p>
+               <div class="p-0 m-0 leading-6 text-left text-zinc-700" style="outline: none;">
+                 <a
+                       class="shadow-2xl inline-block py-2 px-10 text-base not-italic font-bold leading-7 text-center rounded-sm cursor-pointer bg-neutral-100 text-slate-800"
+                       href="https://symbolsecurity.com/contact/"
+                 >Get Started ➕
+                 </a>
 
-    {% end_dnd_area %}
-    {{ standard_footer_includes }}
-  </body>
-</html>
+                 <a
+                       class="shadow-2xl inline-block relative py-2 px-5 m-0 font-sans text-base not-italic font-bold leading-7 text-center text-white bg-transparent rounded-sm cursor-pointer"
+                       href="https://symbolsecurity.com/partners/"
+                       style="outline: none; text-decoration: none; transition: all 500ms ease 0s; z-index: 1; box-shadow: none; background-image: linear-gradient(to right, rgb(251, 81, 85) 0%, rgb(249, 42, 117) 50%, rgb(251, 81, 85) 100%);">
+                   Become a partner
+                   <span class="inline-block relative p-0 my-0 mr-0 ml-2 w-5 h-5 text-2xl leading-5 text-rose-500 bg-white rounded-sm"
+                       style="outline: none;">+</span>
+                 </a>
+
+
+
+               </div>
+             </div>
+             <div class="flex-1">
+               <img
+                     alt="Awesome Image"
+                     class="inline-block p-0 m-0 max-w-full h-auto leading-6 text-left align-middle rounded-none text-zinc-700"
+                     decoding="async"
+                     height="473"
+                     src="https://i0.wp.com/symbolsecurity.com/wp-content/uploads/2021/03/Homepage-3.png?w=525&amp;ssl=1"
+                     style="outline: none; transition: all 0.7s ease-in-out 0.1s; box-shadow: none;"
+                     width="525"
+               />
+
+             </div>
+
+             <div class="absolute p-0 m-0 w-56 h-56 leading-6 text-left bg-no-repeat text-zinc-700" style='background-image: url("https://symbolsecurity.com/wp-content/themes/naxly/assets/images/icons/wheel-2.png"); outline: none; animation-duration: 30s; animation-iteration-count: infinite; animation-timing-function: linear; left: 100px; top: 120px;'
+             ></div>
+
+             <div
+                   class="absolute p-0 m-0 w-20 h-20 leading-5 text-left bg-no-repeat text-zinc-700"
+                   style='background-image: url("https://symbolsecurity.com/wp-content/themes/naxly/assets/images/icons/wheel-3.png"); outline: none; animation-duration: 24s; animation-iteration-count: infinite; animation-timing-function: linear; left: 130px; top: 55%;'
+             ></div>
+
+
+           </section>
+{{ standard_footer_includes }}

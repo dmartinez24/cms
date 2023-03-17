@@ -1,24 +1,25 @@
 <!--
-    templateType: page
-    isAvailableForNewContent: true
+  templateType: "page"
+  isAvailableForNewContent: true
 -->
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
-    <meta name="description" content="{{ content.meta_description }}">
-    {% if branding_favicon %}
-      <link rel="shortcut icon" href="{{ branding_favicon }}" />
-    {% endif %}
-    {{ standard_header_includes }}
-  </head>
-  <body>
-    {% dnd_area "dnd_area"
-      label="Main section"
-    %}
 
-    {% end_dnd_area %}
-    {{ standard_footer_includes }}
-  </body>
-</html>
+
+{{ standard_header_includes }}
+<section class="text-center relative px-0 py-20 m-0 font-bold leading-6 text-left bg-white text-zinc-700 bg-opacity-[0]" style="outline: none; transition: background 0.3s ease 0s, border 0.3s ease 0s, border-radius 0.3s ease 0s, box-shadow 0.3s ease 0s;">
+             <h2 class="relative visible px-0 pt-0 pb-4 m-0 font-sans text-4xl not-italic font-normal text-center opacity-100 text-slate-800" style="line-height: 46px; outline: none; transition: all 500ms ease 0s;">Are you interested in our services?</h2>
+             <div class="relative p-0 my-0 mx-auto w-16 h-2 font-bold leading-6 text-center bg-no-repeat text-zinc-700"
+                   style='background-image: url("https://symbolsecurity.com/wp-content/themes/naxly/assets/images/icons/decor-1.png"); outline: none;'
+             ></div>
+             <a
+                   class="inline-block py-5 px-10 m-0 mt-10 w-auto font-sans text-lg not-italic font-medium leading-none text-center text-white rounded cursor-pointer hover:border-slate-900 hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-900 hover:text-white focus:border-slate-900 focus:bg-slate-900 focus:text-white bg-[linear-gradient(to_right,rgb(251,81,85)_0%,rgb(249,42,117)_50%,rgb(251,81,85)_100%)] shadow-2xl"
+                   href="https://symbolsecurity.com/contact/"
+                   role="button">
+               <span
+                     class="inline-block flex-grow order-10 p-0 m-0 text-lg font-medium leading-4 text-center text-white cursor-pointer"
+                     style="outline: none;"
+               >Contact us</span
+               >
+
+             </a>
+           </section>
+{{ standard_footer_includes }}
