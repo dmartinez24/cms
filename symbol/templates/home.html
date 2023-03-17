@@ -4,11 +4,13 @@
   label: Home
   screenshotPath: ../images/template-previews/home.png
 -->
+
+
+
 {% extends "./layouts/base.html" %}
 
 {% block body %}
 <div class="py-4 max-w-6xl mx-auto">
-  <p>SOME TESTING</p>
   {% include "../sections/banner.html" %}
   {% include "../sections/services.html" %}
   {% include "../sections/wwd.html" %}
@@ -18,6 +20,7 @@
   {% include "../sections/feedback.html" %}
   {% include "../sections/about.html" %}
   {% include "../sections/contact-us.html" %}
+  
 </div>
 
 {% endblock body %}
