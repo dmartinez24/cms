@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING", "QUOTE" ],
+  "module_id" : 106822639658,
+  "label" : "card group",
+  "is_available_for_new_content" : true
+}

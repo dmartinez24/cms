@@ -1,0 +1,38 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing page
+  screenshotPath: ../images/template-previews/landing-page.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block header %}
+  {% global_partial path="./partials/header-no-navigation.html" %}
+{% endblock header %}
+
+{% block body %}
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--landing-page"
+%}
+
+  {# Hero banner #}
+
+  {% include_dnd_partial
+    path="../sections/hero-banner.html"
+  %}
+
+  {# Three column image with text #}
+
+  {% include_dnd_partial
+    path="../sections/multi-column-content.html",
+    context={
+      "background_color": "#FFFFFF"
+    }
+  %}
+
+{% end_dnd_area %}
+{% endblock body %}
+
+{% block footer %}
+{% endblock footer %}

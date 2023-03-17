@@ -1,0 +1,14 @@
+[ {
+  "id" : "a9941529-100a-f333-274c-f18147535191",
+  "name" : "choice_field",
+  "display_width" : null,
+  "label" : "Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "value 1", "fa fa-user-tag" ], [ "value 2", "Label 2" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+} ]

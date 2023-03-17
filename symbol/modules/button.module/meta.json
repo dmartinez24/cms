@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "/take/images/module-icons/cta.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 106917511848,
+  "label" : "Button",
+  "is_available_for_new_content" : true
+}
