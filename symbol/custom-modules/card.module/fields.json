@@ -1,0 +1,35 @@
+[ {
+  "id" : "d3cde658-d5e5-141e-3b26-e421d1a268d8",
+  "name" : "card_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "7c9f7992-2abb-03c4-b8e9-1a52f78e2191",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "title"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text_field" : "title"
+  }, {
+    "text_field" : "title"
+  } ]
+} ]
